@@ -1,0 +1,264 @@
+/* Fonts */
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    color: #696969;
+}
+
+p {
+    font-size: 18px;
+    color: #696969;
+}
+
+a {
+    color: #388216;
+}
+
+mark {
+    background-color: #dffcb3;
+}
+
+button {
+    text-decoration: none;
+    color: #388216;
+    background-color: rgba(255, 0, 0, 0);
+    border: solid 2px #b0cca3;
+    border-radius: 30px;
+    padding: 8px 30px;
+}
+
+button:hover {
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Start Main page */
+.homepage {
+    height: 100vh;
+    padding: 15% 30% 0 30%;
+    text-align: center;
+
+    background: linear-gradient(-45deg, white, #e6f1fb, white, #e6faf6);
+    background-size: 200% 200%;
+    animation: gradient 7s ease infinite;
+}
+
+.homepage h1 {
+    font-size: 48px;
+}
+
+/* Background */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/** Typing Text **/
+.typed-text {
+    color: black;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    animation: blink 1s infinite;
+    height: 45px;
+}
+
+.cursortyping {
+    animation: blink 200s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #a9d46a;
+    }
+
+    49% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: #a9d46a;
+    }
+
+    99% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: #a9d46a;
+    }
+}
+
+/* Button Row */
+.homepage-row {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.homepage-row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.homepage-col {
+    float: left;
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+}
+
+.homepage-col button {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .homepage-col {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .homepage-col {
+        width: 100%;
+    }
+}
+/* End homepage */
+
+/* Start Projects */
+.projects {
+    padding: 2% 15% 5% 15%;
+}
+
+/* About Row */
+.projects-row {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.projects-row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.projects-col {
+    float: left;
+}
+
+.projects-desc {
+    width: 60%;
+    padding: 25px 10% 0 0;
+}
+
+.honours {
+    font-size: 15px;
+}
+
+.projects-img {
+    width: 40%;
+}
+
+.projects-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .projects-col {
+        width: 100%;
+    }
+}
+
+/* More Row */
+.more-row {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.more-row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.more-col {
+    float: left;
+    width: 35%;
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .more-col {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .more-col {
+        width: 100%;
+    }
+}
+/* End Projects */
+
+/* Start Footer */
+.footer {
+    padding: 5% 15% 5% 15%;
+    background-color: #dffcb3;
+}
+
+/* Button Row */
+.footer-row {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer-col {
+    float: left;
+    width: 15%;
+    margin-right: 15px;
+}
+
+.footer-col button {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer-col {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* End Footer */

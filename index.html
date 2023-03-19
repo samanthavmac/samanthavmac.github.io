@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Samantha Mac</title>
+        <meta
+            name="description"
+            content="Bienvenue! I'm Samantha Mac, a grade 11 student interested in product design and health advocacy."
+        />
+        <meta
+            name="keywords"
+            content="Eye Hope Canada, Eye Hope, Eye, Organization, Student-led, Samantha Mac, Bur Oak Secondary School, UX Design, UI Design, Design, Business, DECA, Entrepreneurship, Product Design, Intern"
+        />
+        <meta name="author" content="Samantha-Mac" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <!-- Styles -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <!-- Animation-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+
+    <body onload="onLoad()" onresize="onResize()">
+
+        <!--Start Landing Page-->
+        <section id="homepage">
+            <div class="homepage">
+                <h1 data-aos="fade-up" data-aos-duration="1000">
+                    Always <span class="typed-text"></span
+                    ><span class="cursor cursortyping"></span>
+                </h1>
+                <br />
+                <p data-aos="fade-up" data-aos-duration="1000">
+                    I'm <mark>Samantha Mac</mark>, a grade 11 student who enjoys
+                    learning about <br />product design 🎨 and health advocacy
+                    🩺.
+                </p>
+
+                <div data-aos="fade-up" data-aos-duration="1000" class="homepage-row">
+                    <div class="homepage-col">
+                        <button onclick="window.location.href='#projects';">Projects</button>
+                    </div>
+                    <div class="homepage-col">
+                        <button onclick=" window.open('https://www.linkedin.com/in/samanthavmac/', '_blank'); return false;">LinkedIn</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Landing Page-->
+
+        <!--Start Projects-->
+        <section id="projects">
+            <div class="projects">
+                <div data-aos="fade-up-right" data-aos-duration="1000" class="projects-row">
+                    <div data-aos="zoom-in" class="projects-col projects-desc">
+                        <h2>The all-in-one grocery list app.</h2>
+                        <p>
+                            <mark>OliveOne</mark> is a mobile app where users can view grocery
+                            store products across multiple stores and their real-time prices, availability, and product information.
+                        </p>
+                        <a href="https://samantha-mac.notion.site/OliveOne-Reimagined-Case-Study-8861dba9dfe7475581d30a35352c9bb0" target="_blank">Learn more →</a>
+                        <br />
+                        <br />
+                        <p class="honours">
+                            🥇 Markham Pitch Your Biz, 2021<br />🥇 iStartUp
+                            Entreprenurship Competition, 2021
+                        </p>
+                    </div>
+                    <div class="projects-col projects-img">
+                        <img src="images/oliveone-img.png" />
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-duration="1000" class="projects-row">
+                    <div data-aos="zoom-in" class="projects-col projects-desc">
+                        <h2>Machine learning for photography education.</h2>
+                        <p>
+                            <mark>Photon</mark> is a mobile app that provides users with real-time tips and feedback on how to take photos that match one’s desired visual aesthetic.
+                        </p>
+                        <p class="honours">
+                            🥇 Independent Business Plan @ DECA Provincials, 2023
+                        </p>
+                    </div>
+                    <div class="projects-col projects-img">
+                        <img src="images/photon-img.png" />
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-duration="1000" class="projects-row">
+                    <div data-aos="zoom-in" class="projects-col projects-desc">
+                        <h2>Addressing women+ safety on <br>public transit.</h2>
+                        <p>
+                            <mark>Nightlight</mark> is a web app that indicates suspicious activity at public transit stops. 
+                        </p>
+                        <a href="https://github.com/samanthavmac/nightlight" target="_blank">Learn more →</a>
+                        <br />
+                        <br />
+                        <p class="honours">
+                            🥇 Technova x UWaterloo Connectivity Hack, 2022
+                        </p>
+                    </div>
+                    <div class="projects-col projects-img">
+                        <img src="images/nightlight-img.png" />
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-duration="1000" class="projects-row">
+                    <div data-aos="zoom-in" class="projects-col projects-desc">
+                        <h2>Reducing furniture waste.</h2>
+                        <p>
+                            <mark>Cocycle</mark> is an app that pairs freelancers with environmentally-conscious users to upcycle old furniture and clothing.
+                        </p>
+                        <a href="https://www.figma.com/proto/kckC13PRVRYpV8kFc0CNCM/Cocycle---Prototype?page-id=0%3A1&node-id=46-10&viewport=-14%2C359%2C0.1&scaling=scale-down&starting-point-node-id=122%3A150" target="_blank">Learn more →</a>
+                        <br />
+                        <br />
+                        <p class="honours">
+                            🥇 EM Girls Entrepreneurial Competition, 2022
+                        </p>
+                    </div>
+                    <div class="projects-col projects-img">
+                        <img src="images/cocycle-img.png" />
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-duration="1000" class="projects-row">
+                    <div data-aos="zoom-in" class="projects-col projects-desc">
+                        <h2>Creating smart menu plans for college students.</h2>
+                        <p>
+                            As a product designer at <mark>WePlate</mark>, I designed low- and high-fidelity prototypes of the mobile app for students and the website for cafeteria administrators.
+                        </p>
+                        <a href="https://www.weplate.app/" target="_blank">Learn more →</a>
+                    </div>
+                    <div class="projects-col projects-img">
+                        <img src="images/weplate-img.png" />
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-duration="1000" class="projects-row">
+                    <div data-aos="zoom-in" class="projects-col projects-desc">
+                        <h2>A redesign of the the Chatime app.</h2>
+                        <p>
+                            As a bubble-tea-lover, I use the <mark>Chatime Societea</mark> app frequently. In my redesign, I tackled the interface and user experience flaws I noticed through my personal use.
+                        </p>
+                        <a href="https://samantha-mac.notion.site/Chatime-Society-Case-Study-d55d200d90b84337a3027396c5fe6368" target="_blank">Learn more →</a>
+                    </div>
+                    <div class="projects-col projects-img">
+                        <img src="images/filler.png" />
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000" class="projects-row">
+                        <h2>Looking for more?</h2>
+                        <div class="more-row">
+                            <div class="more-col">
+                                <p>
+                                    <mark>Graphic design work</mark>
+                                    <p>🖌️ Using Figma and Photoshop</p>
+                                    <button onclick=" window.open('https://drive.google.com/drive/folders/1-wJNH8x3LZ1hX_fDjsxvsudPrSjdAnwy?usp=sharing', '_blank'); return false;">Graphic Design Projects</button>
+                                </p>
+                            </div>
+                            <div class="more-col">
+                                <p>
+                                    <mark>Coding projects</mark>
+                                    <p>🔨 Using Python, HTML, CSS, JS</p>
+                                    <button onclick=" window.open('https://github.com/samanthavmac', '_blank'); return false;">Github</button>
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!--End Projects-->
+
+        <!--Start Footer-->
+        <section id="footer">
+            <div data-aos="fade-up" data-aos-duration="3000" class="footer">
+                <h1>Let's connect.</h1>
+                <p>Thanks for stopping by my corner of the internet!</p>
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <button onclick=" window.open('https://www.linkedin.com/in/samanthavmac/', '_blank'); return false;">LinkedIn</button>
+                    </div>
+                    <div class="footer-col">
+                        <button onclick=" window.open('https://github.com/samanthavmac', '_blank'); return false;">Github</button>
+                    </div>
+                    <div class="footer-col">
+                        <button onclick=" window.open('https://github.com/samanthavmac', '_blank'); return false;">Email</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Footer-->
+
+        <!-- Scripts -->
+        <script src="scripts/typeWritingHeader.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            document.querySelector('html').classList.remove('no-js');
+            if (!window.Cypress) {
+              const scrollCounter = document.querySelector('.js-scroll-counter');
+      
+              AOS.init({
+                mirror: true
+              });
+      
+              document.addEventListener('aos:in', function(e) {
+                console.log('in!', e.detail);
+              });
+      
+              window.addEventListener('scroll', function() {
+                scrollCounter.innerHTML = window.pageYOffset;
+              });
+            }
+          </script>
+    </body>
+</html>
