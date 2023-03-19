@@ -44,7 +44,7 @@ button:hover {
 /* Start Main page */
 .homepage {
     height: 100vh;
-    padding: 15% 30% 0 30%;
+    padding: 15% 30vw 0 30vw;
     text-align: center;
 
     background: linear-gradient(-45deg, white, #e6f1fb, white, #e6faf6);
@@ -206,6 +206,7 @@ button:hover {
     float: left;
     width: 35%;
     margin-right: 15px;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -243,6 +244,7 @@ button:hover {
     float: left;
     width: 15%;
     margin-right: 15px;
+    margin-bottom: 20px;
 }
 
 .footer-col button {

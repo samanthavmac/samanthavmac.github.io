@@ -1,1 +1,10 @@
-node_modules
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore node/grunt dependency directories
+node_modules/
+
+# Ignore build directories.
+/build
+/dist
