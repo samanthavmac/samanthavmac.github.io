@@ -43,13 +43,13 @@ button:hover {
 
 /* Start Main page */
 .homepage {
-    height: 100vh;
+    height: 91vh;
     padding: 15% 30vw 0 30vw;
     text-align: center;
 
-    background: linear-gradient(-45deg, white, #e6f1fb, white, #e6faf6);
+    background: linear-gradient(-45deg, white, #d9efff, white, #bbe3b8);
     background-size: 200% 200%;
-    animation: gradient 7s ease infinite;
+    animation: gradient 7s ease-in-out infinite;
 }
 
 .homepage h1 {
@@ -204,15 +204,8 @@ button:hover {
 
 .more-col {
     float: left;
-    width: 35%;
-    margin-right: 15px;
+    width: 45%;
     margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .more-col {
-        width: 40%;
-    }
 }
 
 @media screen and (max-width: 767px) {
