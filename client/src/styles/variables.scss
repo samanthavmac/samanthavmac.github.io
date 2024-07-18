@@ -1,0 +1,43 @@
+$primary-light: #2ecc71;
+$secondary-light: #494d4a;
+$card-light: #f0f0f0;
+$card-secondary-light: #dbdbdb;
+$background-light: linear-gradient(-45deg, white, #e0ffed, white, #bbe3b8);
+$text-light: #40403f;
+$border-light: #b3b3b3;
+$nav-background-light: #e9f0e9;
+$light-border-light: #828281;
+
+$primary-dark: #2ecc71;
+$secondary-dark: #D9FDD6;
+$card-dark: #212121;
+$card-secondary-dark: #424242;
+$background-dark: linear-gradient(45deg, #192019, #323232, #192019, #545454);
+$text-dark: #e8e8e8;
+$border-dark: #424242;
+$nav-background-dark: #424242;
+$light-border-dark: #ffffff;
+
+:root {
+  --primary: #{$primary-light};
+  --secondary: #{$secondary-light};
+  --card: #{$card-light};
+  --card-secondary: #{$card-secondary-light};
+  --background: #{$background-light};
+  --text: #{$text-light};
+  --border: #{$border-light};
+  --nav-background: #{$nav-background-light};
+  --light-border: #{$light-border-light};
+}
+
+body.dark-mode {
+  --primary: #{$primary-dark};
+  --secondary: #{$secondary-dark};
+  --card: #{$card-dark};
+  --card-secondary: #{$card-secondary-dark};
+  --background: #{$background-dark};
+  --text: #{$text-dark};
+  --border: #{$border-dark};
+  --nav-background: #{$nav-background-dark};
+  --light-border: #{$light-border-dark};
+}
