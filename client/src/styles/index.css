@@ -1,0 +1,251 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SWITCH DARK-LIGHT */
+.switch-container {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.switch-container img {
+  height: 20px;
+  width: 20px;
+  margin: 5px 15px 0 15px;
+}
+
+/* FONTS */
+/* Import font */
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Variable.ttf") format("truetype");
+}
+
+/* COLOURS */
+:root {
+  --primary: #2ecc71;
+  --secondary: #D9FDD6;
+  --card: #171717;
+  --card-secondary: #3c3c3c;
+  --background: linear-gradient(-45deg, white, #d9efff, white, #bbe3b8);
+  --text: #e8e8e8;
+  --border: #424242;
+  --nav-background: #424242;
+  --light-border: #424242;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  background: var(--background);
+  -webkit-text-fill-color: var(--text);
+  padding: 2% 20% 10% 20%;
+  background-size: 100%;
+  animation: gradient 2s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 5%;
+  }
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Paragraph and subtitle */
+p1,
+p2,
+p3 {
+  font-size: 16px;
+}
+
+p1 {
+  /* Default */
+  font-weight: 400;
+}
+
+p2 {
+  /* Bold */
+  font-weight: 700;
+}
+
+p3 {
+  /* Italic */
+  font-weight: 400;
+  font-style: italic;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* BUTTONS */
+button {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  justify-content: center;
+  background: none;
+  border: none;
+}
+
+button:hover,
+a:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+/* Links */
+.links Button {
+  margin-right: 15px;
+  border: 1px var(--border) solid;
+  border-radius: 5px;
+  padding: 10px 10px 0 10px;
+}
+
+.links img {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+.links Button:hover {
+  background-color: var(--border);
+}
+
+/* MODAL EXIT */
+.exit-button {
+  position:absolute;
+  border: none;
+  cursor: pointer;
+  top: 3%;
+  right: 5%;
+  z-index: 999;
+}
+
+.exit-button:hover {
+  opacity: 70%;
+}
+
+/* LAYOUTS */
+.vertical-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-stack {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .horizontal-stack {
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+
+  .modal-header {
+    flex-direction: column-reverse; /* Reverse order for mobile layout */
+  }
+}
+
+section {
+  margin-top: 50px;
+}
+
+/* MODAL POPUP*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Slightly darken background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Modal content */
+.card {
+  background-color: var(--background);
+}
+
+.modal-content {
+  border-radius: 35px;
+  max-width: 70%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+body.modal-open {
+  overflow: hidden; /* Lock scrolling */
+}
+
+.modal-text {
+  padding: 5% 10% 0% 10%;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 95%;
+  }
+}
