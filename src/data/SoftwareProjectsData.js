@@ -63,38 +63,31 @@ const SoftwareProjectsData = [
     name: "Personal Website",
     path: "personal-website",
     tagline: "Showcasing my software projects through Spotify",
-    techStack: "React",
-    usageDescription: "With each iteration of my personal website, I challenge myself to implement new frameworks, coding practices, and features to enhance my website's efficiency and complexity.",
+    techStack: "React, Node.js, Express.js, PostgreSQL",
+    usageDescription:
+      "With each iteration of my personal website, I challenge myself to implement new frameworks, coding practices, and features to enhance my website's efficiency and complexity.",
     keyFeatures: [
       {
-        icon: "🛣️",
-        feature:
-          "Get directions of the safest walkable route to your destination",
+        icon: "🌙",
+        feature: "Switch between dark and light mode",
       },
       {
-        icon: "🗺️",
+        icon: "💻",
         feature:
-          "Share your real-time location, intended destination, and time of arrival with your ‘Angels’",
-      },
-      {
-        icon: "🛑",
-        feature:
-          "Report unsafe locations, which Haven will avoid on future routes for all users",
-      },
-      {
-        icon: "🚨",
-        feature:
-          "Enter ‘Emergency Mode’ to alert your ‘Angels’ and campus police, record your surroundings, and sound your alarm.",
+          "Software and design project breakdowns with embedded Figma prototypes",
       },
     ],
     technicalDescription: [
-      "Designed and deployed over 20 RESTful API endpoints to Heroku Cloud, integrating with Google Place API for route instructions and location tracking.",
-      "Built custom animated UI components and standardized auto layout constraints on Swift Storyboard for reusable and efficient development across view controllers.",
-      "Integrated over 150 outlets and multiple segues for seamless UI interaction and navigation.",
+      "Utilized React's component-based architecture, integrating React libraries for responsive layouts and animations and SASS for light/dark mode themes.",
+      "Engineered a local PostgreSQL database integrated with Node.js and Express.js to handle POST requests for password-protected resume access.",
     ],
     awards: [],
     links: [
-      { type: "github", title: "Github", url: "https://github.com/example" },
+      {
+        type: "github",
+        title: "Github",
+        url: "https://github.com/samanthavmac.github.io",
+      },
       {
         type: "website",
         title: "View Portfolio",
@@ -151,7 +144,8 @@ const SoftwareProjectsData = [
     tagline:
       "Strategically navigate a shifting maze to collect all your treasures",
     techStack: "Java",
-    usageDescription: "A fun spin on the classic Labyrinth board game: Play with new modifications like a treasure pathfinder and animated game board.",
+    usageDescription:
+      "A fun spin on the classic Labyrinth board game: Play with new modifications like a treasure pathfinder and animated game board.",
     keyFeatures: [
       { icon: "🃏", feature: "Distribute treasure cards to 2-4 players" },
       { icon: "💸", feature: "Collect your treasures first to win!" },
@@ -187,7 +181,8 @@ const SoftwareProjectsData = [
     path: "nightlight",
     tagline: "Informing women+ about suspicious activity on public transit",
     techStack: "HTML, CSS, JS",
-    usageDescription: "Sexual harrassment and assault on public transit is an unfortunate reality for many. Nightlight leverages user engagement to alert commuters about unsafe incidents.",
+    usageDescription:
+      "Sexual harrassment and assault on public transit is an unfortunate reality for many. Nightlight leverages user engagement to alert commuters about unsafe incidents.",
     keyFeatures: [
       {
         icon: "🚇",
@@ -249,7 +244,8 @@ const SoftwareProjectsData = [
     tagline:
       "Top the leaderboards by guiding your Animal Crossing character through custom maps.",
     techStack: "Java",
-    usageDescription: "Where Animal Crossing meets Super Mario Bros! Jump, run, and teleport through the Animal Crossing world.",
+    usageDescription:
+      "Where Animal Crossing meets Super Mario Bros! Jump, run, and teleport through the Animal Crossing world.",
     keyFeatures: [],
     technicalDescription: [
       "Implemented keyboard listeners and smooth player animations for movements like walking, jumping, and teleportation.",
@@ -272,7 +268,8 @@ const SoftwareProjectsData = [
     path: "oop-module",
     tagline: "Learn about Object-Oriented programming",
     techStack: "Java",
-    usageDescription: "New to Java, Python, or C++? This user-friendly course introduces object-oriented programming through engaging modules and games.",
+    usageDescription:
+      "New to Java, Python, or C++? This user-friendly course introduces object-oriented programming through engaging modules and games.",
     keyFeatures: [],
     technicalDescription: [
       "Researched and deconstructed OOP concepts such as inheritance, polymorphism, and encapsulation to develop comprehensive learning modules.",

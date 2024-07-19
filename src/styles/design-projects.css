@@ -11,6 +11,10 @@
   padding: 0 2% 0 0;
 }
 
+.design:hover {
+  animation: bounceAll 0.6s ease-in-out;
+}
+
 .design-icon {
   width: 90px;
   margin-right: 30px;

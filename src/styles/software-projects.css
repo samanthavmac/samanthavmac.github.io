@@ -1,6 +1,10 @@
 @import url("index.css");
 
 /* ProjectCondensed */
+.software-project-condsened-body:hover {
+  animation: bounceAll 0.6s ease-in-out;
+}
+
 .software-project-condsened-body {
   position: relative;
 }
