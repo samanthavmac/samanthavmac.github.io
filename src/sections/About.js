@@ -55,7 +55,6 @@ const About = () => {
             <h2>Top links this month</h2>
             {SocialData.map((element) => (
               <Social
-                key={element.key}
                 title={element.title}
                 path={element.path}
                 passwordProtected={element.passwordProtected}
