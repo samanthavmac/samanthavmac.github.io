@@ -17,12 +17,7 @@ function Experiences() {
   };
 
   return (
-    <section
-      id="experiences"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="700"
-    >
+    <section id="experiences">
       <h2>Recent activity</h2>
       <Carousel
         responsive={responsive}

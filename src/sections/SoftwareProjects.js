@@ -20,12 +20,7 @@ function SoftwareProjects() {
   };
 
   return (
-    <section
-      id="projects"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="700"
-    >
+    <section id="projects">
       <h2>Made by Samantha Mac</h2>
       <div className="container projects px-0">
         <div className="row">

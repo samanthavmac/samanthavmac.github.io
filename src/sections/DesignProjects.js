@@ -20,12 +20,7 @@ function DesignProjects() {
   };
 
   return (
-    <section
-      id="design"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="700"
-    >
+    <section id="design">
       <h2>More of design</h2>
       <div>
         {DesignProjectsData.map((project) => (

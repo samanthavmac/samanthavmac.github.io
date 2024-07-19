@@ -35,12 +35,7 @@ const About = () => {
   // };
 
   return (
-    <section
-      id="about"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="700"
-    >
+    <section id="about">
       <div className="container px-0">
         <div className="row">
           {/* Introduction */}
