@@ -1,10 +1,11 @@
 # Personal Website
 
 With each iteration of my personal website, I challenge myself to implement new frameworks, coding practices, and features to enhance my website's efficiency and complexity.
-![personal-website-1](https://github.com/user-attachments/assets/f87a483b-3636-4c45-a2a4-6579809d69d8)
-![personal-website-2](https://github.com/user-attachments/assets/c544f805-25a3-4be2-86d5-0b86558c5813)
-![personal-website-3](https://github.com/user-attachments/assets/b3615e93-b88f-4a06-b213-4242642a5b88)
-![personal-website-4](https://github.com/user-attachments/assets/fc795105-9afa-468f-9c5b-33da3b6c98ea)
+![samanthavmac github io-1](https://github.com/user-attachments/assets/0a94981f-eda6-4e58-9bb1-cfa3b025a132)
+![samanthavmac github io-2](https://github.com/user-attachments/assets/fef91334-d9e8-46cc-ada6-4d3ffd0f1dd7)
+![samanthavmac github io-3](https://github.com/user-attachments/assets/9cef5551-9533-4049-81df-d027c8357887)
+![samanthavmac github io-4](https://github.com/user-attachments/assets/de3f5045-20f0-4d15-bc4e-db9af57b61cb)
+![samanthavmac github io-5](https://github.com/user-attachments/assets/5cc65a67-9039-49ec-937b-c4457f814ca6)
 
 ## Languages/Tools
 
