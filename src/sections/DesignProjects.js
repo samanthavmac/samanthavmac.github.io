@@ -20,16 +20,14 @@ function DesignProjects() {
   };
 
   return (
-    <section id="design">
-      <h2
-        className="container projects px-0"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-      >
-        More of design
-      </h2>
-      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <section
+      id="design"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
+      <h2>More of design</h2>
+      <div>
         {DesignProjectsData.map((project) => (
           <DesignProjectCondensed
             id={project.key}

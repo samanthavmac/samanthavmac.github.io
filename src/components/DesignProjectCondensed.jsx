@@ -11,9 +11,7 @@ function DesignProjectCondensed(props) {
   };
 
   return (
-    <div className="design" data-aos="fade-up"
-    data-aos-easing="linear"
-    data-aos-duration="700">
+    <div className="design">
       <div className="design-left-col">
         <img
           src={`images/design-projects/${props.path}.png`}
@@ -27,7 +25,9 @@ function DesignProjectCondensed(props) {
       </div>
 
       <div className="design-right-col">
-        <button className="view-more-button" onClick={handleClick}>View More</button>
+        <button className="view-more-button" onClick={handleClick}>
+          View More
+        </button>
       </div>
     </div>
   );

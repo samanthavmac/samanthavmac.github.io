@@ -35,13 +35,13 @@ const About = () => {
   // };
 
   return (
-    <section id="about">
-      <div
-        className="container px-0"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-      >
+    <section
+      id="about"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
+      <div className="container px-0">
         <div className="row">
           {/* Introduction */}
           <div className="col-12 col-md-7 vertical-stack">
@@ -56,7 +56,8 @@ const About = () => {
             {SocialData.map((element) => (
               <Social
                 key={element.key}
-                type={element.type}
+                title={element.title}
+                path={element.path}
                 passwordProtected={element.passwordProtected}
                 url={element.url}
                 onSocialClick={handleSocialClick}

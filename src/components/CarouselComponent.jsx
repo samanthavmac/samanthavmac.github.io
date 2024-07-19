@@ -20,7 +20,7 @@ function CarouselComponent({ path, numImages }) {
       showStatus={false}
       thumbWidth={40}
       showIndicators={true}
-      showArrows={true}
+      showArrows={false}
       margin={0}
     >
       {imageArray.map((index) => (

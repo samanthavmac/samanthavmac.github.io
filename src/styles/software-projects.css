@@ -36,6 +36,12 @@
   -webkit-text-fill-color: var(--primary);
 }
 
+@media (max-width: 1024px) {
+  .software-project-icon-container {
+    margin-bottom: 15px;
+  }
+}
+
 /* ProjectExpanded */
 .software-project-expanded {
   background-color: var(--card);
@@ -45,12 +51,17 @@
   margin-bottom: 30px;
 }
 
+.modal-header {
+  margin-top: 30px;
+}
+
 .modal-header-text {
   margin-left: 50px;
 }
 
 /* Carousel */
-.carousel, .carousel-root {
+.carousel,
+.carousel-root {
   margin: 0;
   padding: 0;
 }

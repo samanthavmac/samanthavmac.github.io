@@ -5,7 +5,7 @@ import '../styles/navbar.css';
 
 const Navbar = () => {
   return (
-    <div className="vertical-nav">
+    <div className="navbar">
       <ul>
         <li><a href="#header">About</a></li>
         <li><a href="#projects">Software Work</a></li>

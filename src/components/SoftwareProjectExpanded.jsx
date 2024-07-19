@@ -7,18 +7,12 @@ import CarouselComponent from "./CarouselComponent";
 
 function SoftwareProjectExpanded({ project, onClose }) {
   return (
-    <div className="software-project-expanded p-0 m-0" 
-    data-aos="fade-up"
-    data-aos-easing="linear"
-    data-aos-duration="700">
+    <div className="software-project-expanded p-0 m-0">
       <button className="exit-button" onClick={onClose}>
         Close
       </button>
 
-      <div
-        className="card-body bg-transparent m-0"
-     
-      >
+      <div className="card-body bg-transparent m-0">
         <div className="modal-text">
           <div className="modal-header">
             <CarouselComponent

@@ -17,11 +17,23 @@ function Experiences() {
   };
 
   return (
-    <section id="experiences" data-aos="fade-up"
-    data-aos-easing="linear"
-    data-aos-duration="1500">
+    <section
+      id="experiences"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
       <h2>Recent activity</h2>
-      <Carousel responsive={responsive} infinite={true} keyBoardControl={false} showDots={false} arrows={true} removeArrowOnDeviceType={["tablet", "mobile"]} autoPlay={true} transitionDuration={300}>
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        keyBoardControl={false}
+        showDots={false}
+        arrows={true}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        autoPlay={true}
+        transitionDuration={300}
+      >
         {ExperiencesData.map((element) => (
           <div key={element.key} className="col">
             <Employment

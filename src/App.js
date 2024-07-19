@@ -11,8 +11,6 @@ import Footer from "./sections/Footer";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Switch from "react-switch";
-import AOS from "aos"; // Import AOS library
-import "aos/dist/aos.css"; // AOS styles
 
 import "./styles/index.css";
 
@@ -83,12 +81,6 @@ function App() {
   });
 
   useEffect(() => {
-    // Initialize AOS with options
-    AOS.init({
-      duration: 800, // Animation duration
-      easing: "ease-in-out", // Easing function
-      once: true, // Animation occurs only once
-    });
 
     // Update CSS variables when mode changes
     updateCssVariables(toggleDarkMode ? "dark" : "light");

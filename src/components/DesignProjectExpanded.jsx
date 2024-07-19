@@ -7,12 +7,7 @@ import "../styles/design-projects.css";
 
 function DesignProjectExpanded({ project, onClose }) {
   return (
-    <div
-      className="design-project-expanded p-0 m-0"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="700"
-    >
+    <div className="design-project-expanded p-0 m-0">
       <button className="exit-button" onClick={onClose}>
         Close
       </button>

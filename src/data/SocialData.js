@@ -4,13 +4,15 @@
 const SocialData = [
     {
         key: 0,
-        type: "Github",
+        title: "Github",
+        path: "github",
         passwordProtected: false,
         url: "https://github.com/samanthavmac/"
     },
     {
         key: 2,
-        type: "Linkedin",
+        title: "Linkedin",
+        path: "linkedin",
         passwordProtected: false,
         url: "https://www.linkedin.com/in/samanthavmac/"
     },

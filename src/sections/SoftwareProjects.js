@@ -20,16 +20,14 @@ function SoftwareProjects() {
   };
 
   return (
-    <section id="projects">
-      <h2
-        className="container projects px-0"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-      >
-        Made by Samantha Mac
-      </h2>
-      <div>
+    <section
+      id="projects"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
+      <h2>Made by Samantha Mac</h2>
+      <div className="container projects px-0">
         <div className="row">
           {SoftwareProjectsData.map((element) => (
             <div key={element.key} className="col-sm-12 col-md-6 col-lg-4 mb-4">

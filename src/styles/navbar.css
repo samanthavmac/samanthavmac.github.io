@@ -1,37 +1,36 @@
-@import url('index.css');
+@import url("index.css");
 
-.vertical-nav {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    opacity: 70%;
-    transform: translateY(-50%);
-    width: 200px;
-    padding: 10px 0;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    z-index: 1000;
-    background: var(--nav-background);
-  }
-  
-  .vertical-nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .vertical-nav ul li {
-    margin: 20px 0;
-  }
-  
-  .vertical-nav ul li a {
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: var(--background) 0.3s ease;
-  }
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  padding: 10px 0;
+  opacity: 70%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: var(--nav-background);
+}
 
-  @media (max-width: 1024px) {
-   .vertical-nav {
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 20px 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  transition: var(--background) 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
     visibility: hidden;
-   }
   }
+}

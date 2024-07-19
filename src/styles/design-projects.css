@@ -74,6 +74,10 @@
     justify-content: flex-start;
     width: 100%;
   }
+
+  .view-more-button {
+    margin: 0
+  }
 }
 
 /* Expanded */

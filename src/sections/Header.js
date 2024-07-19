@@ -5,9 +5,12 @@ import React from "react";
 
 function HeaderBanner() {
   return (
-    <div class="header horizontal-stack row" data-aos="fade-up"
-    data-aos-easing="linear"
-    data-aos-duration="1500"> 
+    <div
+      class="header horizontal-stack row"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
       <img
         class="profile-image col"
         src="images/samantha-mac-headshot.png"

@@ -10,12 +10,7 @@ function SoftwareProjectCondensed(props) {
   };
 
   return (
-    <div
-      className="col-sm-12 col-md-6 col-lg-4 mb-4"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="700"
-    >
+    <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
       <div className="card border-0 bg-transparent" style={{ width: "18rem" }}>
         <div className="card-body software-project-condsened-body vertical-stack">
           <div className="software-project-icon-container">
