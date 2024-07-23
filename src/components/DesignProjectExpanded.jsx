@@ -19,13 +19,15 @@ function DesignProjectExpanded({ project, onClose }) {
           <div className="links">
             <div className="horizontal-stack">
               {project.links.map((link, index) => (
-                <button className="link-button" key={index} href={link.url}>
-                  <img
-                    src={`images/icons/${link.type}-icon.png`}
-                    alt={`${link.type} icon`}
-                  />
-                  <p>{link.title}</p>
-                </button>
+                <a className="button-wrap" href={link.url} target="_blank">
+                  <button className="link-button" key={index} href={link.url}>
+                    <img
+                      src={`images/icons/${link.type}-icon.png`}
+                      alt={`${link.type} icon`}
+                    />
+                    <p>{link.title}</p>
+                  </button>
+                </a>
               ))}
             </div>
           </div>

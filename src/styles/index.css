@@ -133,7 +133,7 @@ p3 {
 }
 
 a {
-  color: var(--text);
+  -webkit-text-fill-color: var(--text);
   text-decoration: none;
 }
 
