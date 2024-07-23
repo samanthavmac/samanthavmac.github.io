@@ -57,7 +57,7 @@ body {
   font-family: "Satoshi", sans-serif;
   background: var(--background);
   -webkit-text-fill-color: var(--text);
-  padding: 2% 20% 10% 20%;
+  padding: 2% 20% 5% 20%;
   background-size: 100%;
   animation: gradient 2s ease-in-out infinite;
 }

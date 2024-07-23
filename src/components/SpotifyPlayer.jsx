@@ -11,7 +11,7 @@ const SpotifyPlayer = ({ playlistId }) => {
       <iframe
         src={`https://open.spotify.com/embed/playlist/${playlistId}`}
         width="100%"
-        height="180px"
+        height="40%"
         allowtransparency="true"
         title="Spotify Player"
         allowFullScreen

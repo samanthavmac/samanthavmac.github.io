@@ -1,7 +1,10 @@
 // Header
 // Displays name and school
 
-import React from "react";
+import React, { useState } from "react";
+import Social from "../components/Social";
+import SocialData from "../data/SocialData";
+import "../styles/about.css";
 
 function HeaderBanner() {
   return (
@@ -18,6 +21,16 @@ function HeaderBanner() {
           Interests: Software for social good, product design, & accessible
           coding education
         </p1>
+        <div class="socials-container horizontal-stack">
+          {SocialData.map((element) => (
+            <Social
+              key={element.key}
+              type={element.type}
+              title={element.title}
+              url={element.url}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

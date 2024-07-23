@@ -108,7 +108,6 @@ function App() {
         </div>
         <Navbar />
         <Header />
-        <About />
         <SoftwareProjects />
         <DesignProjects />
         <Experiences />

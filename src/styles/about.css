@@ -4,21 +4,16 @@
   margin-top: 5%;
   width: 100%;
   margin-bottom: 80px;
-  animation: gentleBounce 9s ease-in-out infinite;
 }
 
 .profile-image {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 250px;
   margin-right: 30px;
 }
 
 /* Socials */
-.social-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 15px;
-  margin-right: 20px;
+.socials-container {
+  margin-top: 15px;
 }
 
 /* Password protect */
