@@ -90,8 +90,8 @@ const SoftwareProjectsData = [
       },
       {
         type: "website",
-        title: "View Portfolio",
-        url: "https://samanthavmac.github.io",
+        title: "2023 Portfolio",
+        url: "https://samanthavmac.github.io/s2023portfolio/",
       },
     ],
     numImages: 4,
