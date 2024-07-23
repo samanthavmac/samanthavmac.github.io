@@ -63,7 +63,7 @@ const SoftwareProjectsData = [
     name: "Personal Website",
     path: "personal-website",
     tagline: "Showcasing my software projects through Spotify",
-    techStack: "React, Node.js, Express.js, PostgreSQL",
+    techStack: "React",
     usageDescription:
       "With each iteration of my personal website, I challenge myself to implement new frameworks, coding practices, and features to enhance my website's efficiency and complexity.",
     keyFeatures: [
