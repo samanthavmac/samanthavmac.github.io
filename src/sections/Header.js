@@ -16,7 +16,7 @@ function HeaderBanner() {
       />
       <div class="vertical-stack pt-4 col">
         <h1>Samantha Mac</h1>
-        <p2>1A Software Engineering @ University of Waterloo</p2>
+        <p2>Software Engineering @ University of Waterloo</p2>
         <p1>
           Interests: Software for social good, product design, & accessible
           coding education
