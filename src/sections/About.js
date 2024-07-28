@@ -5,35 +5,9 @@ import React, { useState } from "react";
 import Social from "../components/Social";
 import SocialData from "../data/SocialData";
 import SpotifyPlayer from "../components/SpotifyPlayer";
-import PasswordPopup from "../components/PasswordPopup";
 import "../styles/about.css";
 
 const About = () => {
-  const [showPopup, setShowPopup] = useState(false);
-  const [currentUrl, setCurrentUrl] = useState("");
-
-  const externalSitePassword = process.env.REACT_APP_EXTERNAL_SITE_PASSWORD;
-
-  const handleSocialClick = (url, passwordProtected) => {
-    if (passwordProtected) {
-      setCurrentUrl(url);
-      setShowPopup(true);
-    } else {
-      window.open(url, "_blank");
-    }
-  };
-
-  // const handleClosePopup = () => {
-  //   setShowPopup(false);
-  // };
-
-  // const handlePasswordSubmit = (password) => {
-  //   if (password === externalSitePassword) {
-  //     window.open(currentUrl, "_blank");
-  //     setShowPopup(false);
-  //   }
-  // };
-
   return (
     <section id="about">
       <div className="container px-0">
@@ -53,25 +27,12 @@ const About = () => {
                 key={element.path}
                 path={element.path}
                 title={element.title}
-                passwordProtected={element.passwordProtected}
                 url={element.url}
-                onSocialClick={handleSocialClick}
               />
             ))}
           </div>
         </div>
       </div>
-
-      {/* {showPopup && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <PasswordPopup
-              onClose={handleClosePopup}
-              onSubmit={handlePasswordSubmit}
-            />
-          </div>
-        </div>
-      )} */}
     </section>
   );
 };

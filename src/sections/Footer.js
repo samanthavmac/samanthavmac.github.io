@@ -11,8 +11,8 @@ function Footer() {
       <div className="footer vertical-stack">
         <p2>Thanks for stopping by!</p2>
         <p1>
-          Contact samanthavaleriemac [@] gmail.com for freelance web development
-          or graphic design requests.
+          Contact samantha.mac [@] uwaterloo.ca for freelance web development
+          or graphic design requests or to chat.
         </p1>
         <div className="spotify-player">
           <SpotifyPlayer
