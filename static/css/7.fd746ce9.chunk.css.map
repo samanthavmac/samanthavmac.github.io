@@ -1,0 +1,1 @@
+{"version":3,"sources":["footer.css"],"names":[],"mappings":"AAEA,QACI,gBAAiB,CACjB,iBACJ,CAEA,gBACI,eACJ","file":"7.fd746ce9.chunk.css","sourcesContent":["@import url('index.css');\n\n.footer {\n    margin-top: 100px;\n    text-align: center;\n}\n\n.spotify-player {\n    margin-top: 20px;\n}"]}
