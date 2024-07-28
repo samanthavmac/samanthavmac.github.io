@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import ClipLoader from "react-spinners/ClipLoader";
+import Placeholder from "./components/Placeholder";
+import { useInView } from 'react-intersection-observer';
 import "./styles/index.css";
 
 // Lazy load sections
@@ -72,6 +74,23 @@ function App() {
     },
   });
 
+  const LazySection = ({ children, threshold = 0.25 }) => {
+    const { ref, inView } = useInView({
+      triggerOnce: true,
+      threshold: threshold,
+    });
+
+    return (
+      <div ref={ref}>
+        {inView ? (
+          <Suspense fallback={<Placeholder />}>{children}</Suspense>
+        ) : (
+          <Placeholder />
+        )}
+      </div>
+    );
+  };
+
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
@@ -80,13 +99,21 @@ function App() {
           <div className="cursor-inner"></div>
         </div>
         <Navbar toggleDarkMode={toggleDarkMode} toggleDarkTheme={toggleDarkTheme} />
-        <Suspense fallback={<div className="loader-container"><ClipLoader color={"#2ecc71"} loading={true} size={50} /></div>}>
+        <LazySection>
           <Header />
+        </LazySection>
+        <LazySection>
           <SoftwareProjects />
+        </LazySection>
+        <LazySection>
           <DesignProjects />
+        </LazySection>
+        <LazySection>
           <Experiences />
+        </LazySection>
+        <LazySection>
           <Footer />
-        </Suspense>
+        </LazySection>
       </div>
     </ThemeProvider>
   );
