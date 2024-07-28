@@ -1,3 +1,5 @@
+@import url('index.css');
+
 .navbar {
   width: calc(100% - 40vw); /* Adjust to account for the 20vw margins on each side */
   margin: 0 auto;
@@ -18,7 +20,7 @@
 }
 
 .navbar.scrolled {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Darker shadow when scrolled */
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.8); /* Darker shadow when scrolled */
 }
 
 .nav-links {
