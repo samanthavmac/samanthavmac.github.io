@@ -1,9 +1,0 @@
-@import url("index.css");
-
-.placeholder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px; /* Adjust based on the expected height of your content */
-    background: none;
-  }
