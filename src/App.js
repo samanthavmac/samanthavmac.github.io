@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Header from "./sections/Header";
+import About from "./sections/About";
 import SoftwareProjects from "./sections/SoftwareProjects";
 import DesignProjects from "./sections/DesignProjects";
 import Experiences from "./sections/Experiences";
@@ -89,7 +90,9 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <div className="app" onMouseMove={changePosition}>
-        <div className="cursor-style" ref={cursor}></div>
+        <div className="cursor-style" ref={cursor}>
+          <div className="cursor-inner"></div>
+        </div>
         <Navbar toggleDarkMode={toggleDarkMode} toggleDarkTheme={toggleDarkTheme} />
         <Header />
         <SoftwareProjects />
