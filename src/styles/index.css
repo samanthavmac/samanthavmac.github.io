@@ -20,6 +20,7 @@
   border-radius: 50%;
   border: 2px solid var(--primary);
   transform: translate(-50%, -50%);
+  background: transparent;
 }
 
 .cursor-inner {
