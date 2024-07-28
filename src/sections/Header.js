@@ -4,7 +4,7 @@
 import React, { useState } from "react";
 import Social from "../components/Social";
 import SocialData from "../data/SocialData";
-import "../styles/about.css";
+import "../styles/header.css";
 
 function HeaderBanner() {
   return (

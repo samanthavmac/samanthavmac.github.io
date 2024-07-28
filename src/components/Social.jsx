@@ -2,7 +2,7 @@
 // Link to social media
 
 import React from "react";
-import "../styles/about.css";
+import "../styles/header.css";
 
 
 function Social(props) {

@@ -1,31 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/navbar.css';
 
 const Navbar = ({ toggleDarkMode, toggleDarkTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <div className="navbar">
       <div className="hamburger" onClick={handleToggle}>
         <div></div>
         <div></div>

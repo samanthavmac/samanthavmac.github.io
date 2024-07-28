@@ -34,6 +34,13 @@
   transform: translate(-50%, -50%);
 }
 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjust as needed */
+}
+
 /* SWITCH DARK-LIGHT */
 .switch-container {
   position: absolute;

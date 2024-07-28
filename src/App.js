@@ -1,24 +1,23 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef, Suspense, lazy } from "react";
 import Navbar from "./components/Navbar";
-import Header from "./sections/Header";
-import About from "./sections/About";
-import SoftwareProjects from "./sections/SoftwareProjects";
-import DesignProjects from "./sections/DesignProjects";
-import Experiences from "./sections/Experiences";
-import Footer from "./sections/Footer";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import ClipLoader from "react-spinners/ClipLoader";
 import "./styles/index.css";
+
+// Lazy load sections
+const Header = lazy(() => import("./sections/Header"));
+const SoftwareProjects = lazy(() => import("./sections/SoftwareProjects"));
+const DesignProjects = lazy(() => import("./sections/DesignProjects"));
+const Experiences = lazy(() => import("./sections/Experiences"));
+const Footer = lazy(() => import("./sections/Footer"));
 
 function App() {
   const cursor = useRef(null);
-
-  const changePosition = useCallback((e) => {
-    requestAnimationFrame(() => {
-      cursor.current.style.top = `${e.clientY}px`;
-      cursor.current.style.left = `${e.clientX}px`;
-    });
-  }, []);
+  const changePosition = (e) => {
+    cursor.current.style.top = `${e.clientY}px`;
+    cursor.current.style.left = `${e.clientX}px`;
+  };
 
   const [toggleDarkMode, setToggleDarkMode] = useState(true);
   const toggleDarkTheme = () => {
@@ -50,6 +49,10 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    updateCssVariables(toggleDarkMode ? "dark" : "light");
+  }, [toggleDarkMode]);
+
   const darkTheme = createTheme({
     palette: {
       mode: toggleDarkMode ? "dark" : "light",
@@ -69,30 +72,21 @@ function App() {
     },
   });
 
-  useEffect(() => {
-    updateCssVariables(toggleDarkMode ? "dark" : "light");
-  }, [toggleDarkMode]);
-
-  useEffect(() => {
-    document.addEventListener("mousemove", changePosition);
-    return () => {
-      document.removeEventListener("mousemove", changePosition);
-    };
-  }, [changePosition]);
-
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <div className="app">
+      <div className="app" onMouseMove={changePosition}>
         <div className="cursor-style" ref={cursor}>
           <div className="cursor-inner"></div>
         </div>
         <Navbar toggleDarkMode={toggleDarkMode} toggleDarkTheme={toggleDarkTheme} />
-        <Header />
-        <SoftwareProjects />
-        <DesignProjects />
-        <Experiences />
-        <Footer />
+        <Suspense fallback={<div className="loader-container"><ClipLoader color={"#2ecc71"} loading={true} size={50} /></div>}>
+          <Header />
+          <SoftwareProjects />
+          <DesignProjects />
+          <Experiences />
+          <Footer />
+        </Suspense>
       </div>
     </ThemeProvider>
   );
