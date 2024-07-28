@@ -6,6 +6,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CURSOR */
+.app {
+  cursor: none;
+}
+
+.cursor-style {
+  background-color: rgba(0, 255, 255, 0.7);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  transform-origin: 100% 100%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999999999999;
+}
+
 /* SWITCH DARK-LIGHT */
 .switch-container {
   position: absolute;
@@ -57,9 +74,10 @@ body {
   font-family: "Satoshi", sans-serif;
   background: var(--background);
   -webkit-text-fill-color: var(--text);
-  padding: 2% 20% 5% 20%;
+  padding: 8% 20% 5% 20%;
   background-size: 100%;
   animation: gradient 2s ease-in-out infinite;
+  cursor: none;
 }
 
 @media (max-width: 768px) {

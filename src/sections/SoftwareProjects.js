@@ -20,7 +20,7 @@ function SoftwareProjects() {
   };
 
   return (
-    <section id="projects">
+    <section id="software-projects">
       <h2>Made by Samantha Mac</h2>
       <div className="container projects px-0">
         <div className="row">

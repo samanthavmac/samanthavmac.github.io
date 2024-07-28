@@ -20,7 +20,7 @@ function DesignProjects() {
   };
 
   return (
-    <section id="design">
+    <section id="design-projects">
       <h2>More of design</h2>
       <div>
         {DesignProjectsData.map((project) => (

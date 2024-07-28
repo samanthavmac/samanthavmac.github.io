@@ -1,22 +1,23 @@
-// App.js
-
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Header from "./sections/Header";
-import About from "./sections/About";
 import SoftwareProjects from "./sections/SoftwareProjects";
 import DesignProjects from "./sections/DesignProjects";
 import Experiences from "./sections/Experiences";
 import Footer from "./sections/Footer";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import Switch from "react-switch";
 
 import "./styles/index.css";
 
 function App() {
-  const [toggleDarkMode, setToggleDarkMode] = useState(true);
+  const cursor = useRef(null);
+  const changePosition = (e) => {
+    cursor.current.style.top = `${e.clientY}px`;
+    cursor.current.style.left = `${e.clientX}px`;
+  };
 
+  const [toggleDarkMode, setToggleDarkMode] = useState(true);
   const toggleDarkTheme = () => {
     setToggleDarkMode(!toggleDarkMode);
   };
@@ -81,32 +82,15 @@ function App() {
   });
 
   useEffect(() => {
-
-    // Update CSS variables when mode changes
     updateCssVariables(toggleDarkMode ? "dark" : "light");
   }, [toggleDarkMode]);
 
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <div className="app">
-        <div className="switch-container">
-          <img src="/images/icons/sun-icon.png" alt="Sun Icon" />
-          <Switch
-            checked={toggleDarkMode}
-            onChange={toggleDarkTheme}
-            onColor="#2ecc71"
-            onHandleColor="#ffffff"
-            offHandleColor="#ffffff"
-            uncheckedIcon={false}
-            checkedIcon={false}
-            height={30}
-            width={60}
-            handleDiameter={30}
-          />
-          <img src="/images/icons/moon-icon.png" alt="Moon Icon" />
-        </div>
-        <Navbar />
+      <div className="app" onMouseMove={changePosition}>
+        <div className="cursor-style" ref={cursor}></div>
+        <Navbar toggleDarkMode={toggleDarkMode} toggleDarkTheme={toggleDarkTheme} />
         <Header />
         <SoftwareProjects />
         <DesignProjects />
