@@ -18,7 +18,7 @@ button {
   /* LINK BUTTONS */
   .link-button {
     margin-right: 15px;
-    border: 1px var(--border) solid;
+    border: 2.5px var(--border) solid;
     border-radius: 5px;
     padding: 10px 10px 0 10px;
   }
