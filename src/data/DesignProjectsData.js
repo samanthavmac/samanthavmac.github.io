@@ -89,7 +89,7 @@ const DesignProjectsData = [
     key: 5,
     name: "Chatime Reimagined",
     path: "chatime-reimagined",
-    tagline: "A redesign of the the Chatime app",
+    tagline: "A redesign of the Chatime app",
     description:
       "As a bubble-tea-lover, I use the Chatime Societea app frequently. In my redesign, I tackled the interface and user experience flaws I noticed through my personal use.",
     iconURL: "images/filler-icon.png",
