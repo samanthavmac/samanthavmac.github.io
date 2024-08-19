@@ -62,8 +62,8 @@ const SoftwareProjectsData = [
     key: 2,
     name: "Personal Website",
     path: "personal-website",
-    tagline: "Showcasing my software projects through Spotify",
-    techStack: "React",
+    tagline: "Showcasing my software projects through Spotify's UI",
+    techStack: "PERN",
     usageDescription:
       "With each iteration of my personal website, I challenge myself to implement new frameworks, coding practices, and features to enhance my website's efficiency and complexity.",
     keyFeatures: [
@@ -86,7 +86,7 @@ const SoftwareProjectsData = [
       {
         type: "github",
         title: "Github",
-        url: "https://github.com/samanthavmac.github.io",
+        url: "https://github.com/samanthavmac/samanthavmac.github.io",
       },
       {
         type: "website",
@@ -162,8 +162,7 @@ const SoftwareProjectsData = [
     technicalDescription: [
       "Designed and implemented a recursive pathfinding algorithm to identify the shortest path to collectable treasures and the longest overall path.",
       "Engineered a dynamic game board, featuring tile insertion for board shifting, a  score system, and animated player movements.",
-      "Tested edge cases and devised solutions to ensure smooth gameplay.",
-      "Created project management tools including a Gantt chart and schedule to effectively plan and manage project goals and resources.",
+      "Tested edge cases and devised solutions to ensure smooth gameplay."
     ],
     awards: [],
     links: [
