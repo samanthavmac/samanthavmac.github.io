@@ -61,7 +61,6 @@ body {
   padding: 8% 20% 5% 20%;
   background-size: 100%;
   animation: gradient 2s ease-in-out infinite;
-  cursor: none;
 }
 
 @media (max-width: 768px) {

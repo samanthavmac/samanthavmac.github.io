@@ -13,12 +13,6 @@ const Experiences = lazy(() => import("./sections/Experiences"));
 const Footer = lazy(() => import("./sections/Footer"));
 
 function App() {
-  const cursor = useRef(null);
-  const changePosition = (e) => {
-    cursor.current.style.top = `${e.clientY}px`;
-    cursor.current.style.left = `${e.clientX}px`;
-  };
-
   const [toggleDarkMode, setToggleDarkMode] = useState(true);
   const toggleDarkTheme = () => {
     setToggleDarkMode(!toggleDarkMode);
