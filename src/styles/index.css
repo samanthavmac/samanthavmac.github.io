@@ -7,40 +7,6 @@
 @tailwind utilities;
 
 /* CURSOR */
-.app {
-  cursor: none;
-}
-
-.cursor-style {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999999999999;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  border: 2px solid var(--primary);
-  transform: translate(-50%, -50%);
-  background: transparent;
-}
-
-.cursor-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: var(--primary);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.loader-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh; /* Adjust as needed */
-}
-
 /* SWITCH DARK-LIGHT */
 .switch-container {
   position: absolute;

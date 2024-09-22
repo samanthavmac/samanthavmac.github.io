@@ -75,10 +75,7 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <div className="app" onMouseMove={changePosition}>
-        <div className="cursor-style" ref={cursor}>
-          <div className="cursor-inner"></div>
-        </div>
+      <div className="app">
         <Navbar toggleDarkMode={toggleDarkMode} toggleDarkTheme={toggleDarkTheme} />
         <Suspense fallback={<div className="loader-container"><ClipLoader color={"#2ecc71"} loading={true} size={50} /></div>}>
           <Header />
