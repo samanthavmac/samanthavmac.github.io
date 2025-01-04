@@ -17,9 +17,9 @@ const ExperiencesData = [
     {
         key: 2,
         position: "Legal & Marketing Assistant",
-        company: "Leanne Goldstein Law",
+        company: "Leanne Goldstein Law / MK Disability Lawyers",
         path: "leanne-goldstein-law",
-        range: "Jul 2022 - Present",
+        range: "Jul 2022 - Aug 2024",
         links: []
     },
     {
@@ -50,7 +50,7 @@ const ExperiencesData = [
         path: "eye-hope-canada",
         range: "Jul 2019 - Jan 2024",
         links: [
-            {type: "website", title: "Website", url: "https://eyehopecanada.com"},
+            // {type: "website", title: "Website", url: "https://eyehopecanada.com"},
         ],
     },
     {

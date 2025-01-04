@@ -33,11 +33,11 @@ const SoftwareProjectsData = [
           "Enter ‘Emergency Mode’ to alert your ‘Angels’ and campus police, record your surroundings, and sound your alarm.",
       },
     ],
-    technicalDescription: [
-      "Designed and deployed over 20 RESTful API endpoints to Heroku Cloud, integrating with Google Place API for route instructions and location tracking.",
-      "Built custom animated UI components and standardized auto layout constraints on Swift Storyboard for reusable and efficient development across view controllers.",
-      "Integrated over 150 outlets and multiple segues for seamless UI interaction and navigation.",
-    ],
+    // technicalDescription: [
+    //   "Designed and deployed over 20 RESTful API endpoints to Heroku Cloud, integrating with Google Place API for route instructions and location tracking.",
+    //   "Built custom animated UI components and standardized auto layout constraints on Swift Storyboard for reusable and efficient development across view controllers.",
+    //   "Integrated over 150 outlets and multiple segues for seamless UI interaction and navigation.",
+    // ],
     awards: [],
     links: [
       {
@@ -122,10 +122,10 @@ const SoftwareProjectsData = [
       },
     ],
     technicalDescription: [
-      "Formulated a k-means++ clustering algorithm that identifies dominant colours in an image by iteratively updating centroid positions until convergence in <2 seconds.",
-      "Developed GET and POST requests for the Colour API and DataMuse API and parsed JSON responses for data retrieval and manipulation.",
-      "Built API endpoints to the Spotify Web API for users to retrieve songs and modify and save playlists.",
-      "Applied OOP concepts and encapsulation using the MVC framework for efficient data processing, seamless user interactions, and dynamic updates.",
+      // "Formulated a k-means++ clustering algorithm that identifies dominant colours in an image by iteratively updating centroid positions until convergence in <2 seconds.",
+      // "Developed GET and POST requests for the Colour API and DataMuse API and parsed JSON responses for data retrieval and manipulation.",
+      // "Built API endpoints to the Spotify Web API for users to retrieve songs and modify and save playlists.",
+      // "Applied OOP concepts and encapsulation using the MVC framework for efficient data processing, seamless user interactions, and dynamic updates.",
     ],
     awards: [],
     links: [
@@ -217,25 +217,25 @@ const SoftwareProjectsData = [
     ],
     numImages: 3,
   },
-  {
-    key: 6,
-    name: "Eye Hope Canada",
-    path: "eye-hope-canada",
-    tagline: "Web development for non-profits",
-    techStack: "HTML, CSS, JS",
-    usageDescription:
-      "Eye Hope Canada is a student-led organization that supports families affected by childhood cancer.",
-    keyFeatures: [],
-    technicalDescription: [
-      "Built a responsive grid design and implemented animations and interactive popups to enhance user engagement and visual appeal.",
-      "Led a team of designers and web developers in prototyping on Figma and programming the website within two weeks, while establishing protocols for ongoing website maintenance.",
-    ],
-    awards: [],
-    links: [
-      { type: "website", title: "Website", url: "https://eyehopecanada.com" },
-    ],
-    numImages: 2,
-  },
+  // {
+  //   key: 6,
+  //   name: "Eye Hope Canada",
+  //   path: "eye-hope-canada",
+  //   tagline: "Web development for non-profits",
+  //   techStack: "HTML, CSS, JS",
+  //   usageDescription:
+  //     "Eye Hope Canada is a student-led organization that supports families affected by childhood cancer.",
+  //   keyFeatures: [],
+  //   technicalDescription: [
+  //     "Built a responsive grid design and implemented animations and interactive popups to enhance user engagement and visual appeal.",
+  //     "Led a team of designers and web developers in prototyping on Figma and programming the website within two weeks, while establishing protocols for ongoing website maintenance.",
+  //   ],
+  //   awards: [],
+  //   links: [
+  //     { type: "website", title: "Website", url: "https://eyehopecanada.com" },
+  //   ],
+  //   numImages: 2,
+  // },
   {
     key: 7,
     name: "Animal Crossing x Super Mario",

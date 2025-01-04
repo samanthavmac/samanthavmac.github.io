@@ -66,7 +66,7 @@ function SoftwareProjectExpanded({ project, onClose }) {
             </div>
           )}
 
-          {project.technicalDescription.length > 0 && (
+          {project.technicalDescription?.length > 0 && (
             <div>
               <h2>Technical Breakdown</h2>
               <ul className="technical-description">
